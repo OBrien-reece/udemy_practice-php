@@ -2,8 +2,6 @@
 
 class Cars {
 	function getName1() {
-
-
 		echo "I am a method within a class";
 		
 	}
