@@ -2,18 +2,20 @@
 
 class Car {
 
-	public $wheel_count = 4;
+	static $wheel_count = 4;
 	static $door_count = 7;	
 
-	function carDetails() {
+	static function carDetails() {
 
-		echo $this->wheel_count;
-		echo $this->door_count;
-		echo $this->seat_count;
+		echo Car::$door_count;
+		echo Car::$door_count;
+		
 	}
 }
 
-$bmw = new Car();
-echo $bmw->wheel_count;
+// $bmw = new Car();
+// echo $bmw->wheel_count;
 
-echo Car::$door_count;
+echo Car::carDetails();
+
+// echo Car::$door_count;
